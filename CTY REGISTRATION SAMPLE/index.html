@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catch Them Young Referees Registration</title>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"
+
+    <style>
+        body {
+            <font-family:arial, sans-serif;
+            background: #e8f0fe;
+        }
+
+        .container {
+            max-width: 420px;
+            background: white;
+            padding: 20px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1)
+
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px;
+        }
+
+        h2 {
+            text-align: center;
+            color: 1a73e8;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        input, select, button {
+            width: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button{
+            background: #1a73e8;
+            color: white;
+            border: none;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: ponter;
+        }
+
+        button:hover {
+            background #1558b0;
+        }
+
+        ,success {
+            display: none;
+            color: green;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head> 
+<body>
+    
+<div class="container">    
+     <img src="logo.png2.zip" alt="Catch Them Young Referees logo" class="logo"
+
+     <h2>Catch Them Young Referees</h2>
+     <p>Referee Registration Form</p>
+
+     <form id="RefereeForm" action="https://formspree,io/f/mlggnobl" method="post"
+
+       <input="text" name="unknown" placeholder="unknown" required>
+       <input type="text" name="Full Name" placeholder="Full Name" required>
+       <input type="number" name="Age" placeholder="Age" required>
+       <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+       <input type="email" name="Email" placeholder="Email" optional>
+       <input type="text" name="Location" placeholder="Location" required>
+       <input type="text" name="Date Of Birth" placeholder="Date Of Birth" required>
+
+       <select name="sport" required>
+        <option value="">select sport</option>
+        <option>FOOTBALL</option>
+       </select>
+
+       <select name="Area Of Desire(choice)" required>
+        <option value="">position</option>
+        <option>center Referee</option>
+        <option>Linesperson Male</option>
+        <option>Linesperson Female</option>
+       </select>
+
+       <select name="Experience Level" required>
+        <option>Beginner</option>
+        <option>Amateur</option>
+        <option>Advanced</option>
+       </select>
+
+       <button type="submit">Register</button>
+
+    </form>
+
+    <div class="success" id="SuccessMessage">
+        .
+    </div>
+</div>
+
+<script>
+    const Form = document.getElementById("refereeForm");
+    const success = document.getElementById("successMessage");
+
+    form.addEventlister("submit", function(e) {
+        success.style.display = "block";
+        
+    });
+</script>
+
+</body>
+</html>
